@@ -32,6 +32,13 @@ A simple and responsive Weather Application built using **HTML**, **CSS**, and *
 - OpenWeatherMap API
 
 ---
+## 📦 Installation
+
+```bash
+git clone https://github.com/nitaidalal/weather-app.git
+cd weather-app
+```
+-Then simply open index.html in your browser.
 
 ## ⚙️ Setup
 
@@ -41,3 +48,15 @@ A simple and responsive Weather Application built using **HTML**, **CSS**, and *
 
 ```js
 const API_KEY = 'YOUR_API_KEY_HERE';
+```
+---
+## 📊 Weather Data Includes
+- City Name & Country
+- Temperature (°C)
+- Humidity (%)
+- Wind Speed (m/s)
+---
+## 👨‍💻 Author
+- Made by **Nitai Dalal**
+
+
