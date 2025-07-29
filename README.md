@@ -22,9 +22,9 @@ This repo contains a collection of beginner to intermediate-level projects built
 | Project        | Live Demo |
 |----------------|-----------|
 | Weather App    | [View Live](http://weather-app-by-nitai.netlify.app) |
-| Todo App       | [View Live](#) |
-| Calculator     | [View Live](#) |
-| Tic-Tac-Toe    | [View Live](#) |
+| Todo App       | [View Live](https://nitai-todolist.netlify.app/) |
+| Bubble Game     | [View Live](https://nitai-bubble-game.netlify.app/) |
+| Password Generator App    | [View Live](https://nitai-password-generator.netlify.app/) |
 
 ---
 
