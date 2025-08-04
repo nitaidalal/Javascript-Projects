@@ -1,6 +1,6 @@
 # 📦 JavaScript Projects Repository
 
-Welcome to my **JavaScript Projects Repository**!  
+Welcome to my **JavaScript Projects Repository**!! 
 This repo contains a collection of beginner to intermediate-level projects built using **HTML**, **CSS**, and **Vanilla JavaScript**.
 
 ---
