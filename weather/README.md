@@ -23,7 +23,6 @@ A simple and responsive Weather Application built using **HTML**, **CSS**, and *
 - Loading state & error messages
 
 ---
-
 ## 🛠️ Built With
 
 - HTML5
