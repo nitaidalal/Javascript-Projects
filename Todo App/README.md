@@ -29,4 +29,3 @@ Supports **add / edit / delete**, **mark as completed**, **keyboard shortcuts**,
 
 ---
 
-
