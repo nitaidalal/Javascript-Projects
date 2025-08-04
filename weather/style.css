@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1f1f2e, #2d2d44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    animation: fadeIn 1.2s ease forwards;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.weather-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px 40px;
+    border-radius: 1.5rem;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 90%;
+    max-width: 400px;
+}
+
+.weather-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.weather-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border-radius: 999px;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;
+}
+
+input[type="text"]::placeholder {
+    color: #666;
+}
+
+input[type="text"]:focus {
+    border-color: #4F46E5;
+    background: #f4f7ff;
+}
+
+button {
+    margin-top: 15px;
+    padding: 0.9rem 1.5rem;
+    border: none;
+    background-color: #4F46E5;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #4338CA;
+    transform: scale(1.04);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+#weatherResult {
+    margin-top: 25px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#weatherResult.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .weather-container {
+        padding: 20px 20px;
+    }
+
+    .weather-container h2 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"] {
+        font-size: 0.9rem;
+        padding: 0.9rem 1rem;
+    }
+
+    button {
+        font-size: 0.95rem;
+        padding: 0.8rem 1rem;
+    }
+
+    #weatherResult {
+        font-size: 1rem;
+    }
+}
