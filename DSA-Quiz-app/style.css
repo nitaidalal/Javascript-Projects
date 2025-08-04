@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.quiz-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 700px;
+}
+
+.quiz-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question p {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.question label {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #444;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #357ab8;
+}
+
+.reset {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #4ae261;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.reset:hover {
+  background-color: #42c956;
+}
+
+.result {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #2c7a7b;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.note {
+  animation: blinkEffect 3s infinite  ease-in-out;
+  color: red;
+}
+
+@keyframes blinkEffect {
+   0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
