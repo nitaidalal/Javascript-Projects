@@ -20,47 +20,55 @@ body {
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   width: 100%;
-  max-width: 700px;
+  max-width: 600px;
 }
 
 .quiz-container h1 {
   text-align: center;
   margin-bottom: 25px;
   color: #333;
+  font-size: 32px;
 }
 
 .question {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .question p {
-  margin-bottom: 10px;
-  font-weight: 500;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .question label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   cursor: pointer;
   color: #444;
+  font-size: 18px;
 }
 
 input[type="radio"] {
-  margin-right: 8px;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+button[type="submit"],
+.reset {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: background 0.3s ease;
 }
 
 button[type="submit"] {
-  display: block;
-  width: 100%;
-  padding: 12px;
   background-color: #4a90e2;
   color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background 0.3s ease;
 }
 
 button[type="submit"]:hover {
@@ -68,17 +76,8 @@ button[type="submit"]:hover {
 }
 
 .reset {
-  display: block;
-  width: 100%;
-  padding: 12px;
   background-color: #4ae261;
   color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background 0.3s ease;
 }
 
 .reset:hover {
@@ -86,21 +85,63 @@ button[type="submit"]:hover {
 }
 
 .result {
-  margin-top: 20px;
+  margin-top: 25px;
   text-align: center;
   font-weight: bold;
   color: #2c7a7b;
-  font-size: 18px;
-  margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .note {
-  animation: blinkEffect 3s infinite  ease-in-out;
+  animation: blinkEffect 3s infinite ease-in-out;
   color: red;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 @keyframes blinkEffect {
-   0% { opacity: 0; }
+  0% { opacity: 0; }
   50% { opacity: 1; }
   100% { opacity: 0; }
+}
+
+
+@media (max-width: 600px) {
+
+  .quiz-container {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .quiz-container h1 {
+    font-size: 26px;
+  }
+
+  .question p {
+    font-size: 18px;
+  }
+
+  .question label {
+    font-size: 16px;
+  }
+
+  input[type="radio"] {
+    transform: scale(1.1);
+  }
+
+  button[type="submit"],
+  .reset {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .result {
+    font-size: 18px;
+  }
+
+  .note {
+    font-size: 14px;
+  }
 }

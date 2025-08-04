@@ -259,7 +259,7 @@ form.addEventListener("submit", (e) => {
       score++;
     }
     else if(selected && selected.value !== obj.answer){
-      corrAns[idx + 1] = obj.answer; // store correct answer
+      corrAns[idx + 1] = obj.answer; 
     }
     // else{
     //   alert(`Alert: You will get 0 marks for any question ${idx + 1}`);
@@ -268,7 +268,7 @@ form.addEventListener("submit", (e) => {
   });
 
   res.textContent = `✅ You scored ${score} out of ${problem.length}`;
-  res.style.display = "block"; // make it visible
+  res.style.display = "block"; 
 
   for (const [qNum, ans] of Object.entries(corrAns)) {
     let correct = document.createElement('p');
@@ -283,5 +283,5 @@ form.addEventListener("submit", (e) => {
 
 // Handle reset
 reset.addEventListener("click", () => {
-  location.reload(); // reload will auto-trigger new questions + hide result
+  location.reload(); 
 });
