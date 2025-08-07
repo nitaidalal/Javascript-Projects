@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snapshot App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Snapshot App</h1>
+      <video id="video" autoplay></video>
+      <canvas id="canvas" style="display: none"></canvas>
+
+      <div class="controls">
+        <label for="filter">Choose Filter:</label>
+        <select id="filter">
+          <option value="none">None</option>
+          <option value="grayscale(100%)">Grayscale</option>
+          <option value="sepia(100%)">Sepia</option>
+          <option value="invert(100%)">Invert</option>
+          <option value="contrast(200%)">High Contrast</option>
+          <option value="blur(3px)">Blur</option>
+          <option value="brightness(150%)">Bright</option>
+          <option value="saturate(200%)">Saturated</option>
+          <option value="hue-rotate(90deg)">Hue Rotate</option>
+          <option value="drop-shadow(5px 5px 10px cyan)">Glow</option>
+          <option value="grayscale(60%) sepia(80%) contrast(150%)">
+            Vintage
+          </option>
+        </select>
+
+        <button id="snap">Take Snapshot</button>
+        <button id="switch-camera">Switch Camera</button>
+
+        <a id="download" download="snapshot.png">Download Now</a>
+      </div>
+      <img id="snapshot" alt="Your snapshot will appear here" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
