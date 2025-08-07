@@ -2,8 +2,6 @@
 
 The **Snapshot App** is a modern, responsive, and privacy-friendly photo capture tool built with pure **HTML**, **CSS**, and **JavaScript**. It uses the **MediaDevices API** to access the user's camera, allowing them to take quick snapshots directly from their browser — no external dependencies or frameworks needed.
 
-> ⚠️ Note: Works best on desktop browsers with camera access enabled.
-
 ---
 
 ## 🚀 Features
